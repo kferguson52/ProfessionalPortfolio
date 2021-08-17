@@ -1,5 +1,29 @@
+/* :root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+  }  
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+} */
+
+/* .header{
+    background-color: rgb(26, 77, 243);
 }
+
+header h1{
+    background-color: cadetblue;
+}
+
+header li{
+    float:right;
+}
+
+header nav {
+    display: inline;
+    color: rgb(160, 113, 95);
+} */
+
