@@ -1,3 +1,38 @@
+.headerOrganization{
+    /* Below, the property called display is generally what we want to go with to control 1 parent block on 1 row.
+    Otherwise, we can use inline-flex to put together multiple flex item parents. */
+    display: flex;
+    /* Below, this is short hand for both flex-direction and flex-wrap. No wrap is the default value to ensure
+    all child elements fit on 1 line. The wrap value will put the items onto multiple lines from top to bottom. */
+    flex-flow: row nowrap;
+    /* Below, the property called justify-content has the default value of flex-start. There are a series of different
+    values for this. It controls the width and spacing of child elements. */
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: normal;
+}
+
+.headerOrganization li {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* :root {
     --primary-color: #fce138;
     --secondary-color: #024e76;
