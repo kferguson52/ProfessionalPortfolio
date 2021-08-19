@@ -1,27 +1,114 @@
-.headerOrganization{
-    /* Below, the property called display is generally what we want to go with to control 1 parent block on 1 row.
-    Otherwise, we can use inline-flex to put together multiple flex item parents. */
-    display: flex;
-    /* Below, this is short hand for both flex-direction and flex-wrap. No wrap is the default value to ensure
-    all child elements fit on 1 line. The wrap value will put the items onto multiple lines from top to bottom. */
-    flex-flow: row nowrap;
-    /* Below, the property called justify-content has the default value of flex-start. There are a series of different
-    values for this. It controls the width and spacing of child elements. */
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: normal;
+/* 
+PART 1
+#1 I will have one flex container here. This flex container will control the h1 and nav blocks within my Header.
+-I will define the justify content = space between.
+-I will give the entire Header block a background color of dark blue.
+#2 I will have a flex item here flex container.h1
+-This will have a font color of black
+-This will have a content background color of light blue.
+-This will have a bigger bottom border height????
+-This will have align-self flex end??? We need to push the header over a little bit
+#3 I will have a flex item here flex container.nav
+-This item will have a font color of light blue.
+
+PART 2
+*/
+body{
+    margin:0;
+    padding: 0;
+    background-color: #B1D4E0;
 }
 
-.headerOrganization li {
-    display: inline;
+header{
+  background-color:#0C2D48; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px;
+}
+
+header h1 {
+    background-color: #2E8BC0;
+    color: whitesmoke;
+    padding: 5px;
+    margin: 0px;
+    line-height: 1;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color:whitesmoke;
+}
+
+nav a:hover{
+    color: red;
+}
+
+nav a:last-child{
+    margin-right: 0;
+}
+
+.banner{
+    background: teal;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/51623c20e4b01df404d682ae/1431604157325-XWF1WJ6U1LQ5S6N810J2/image-asset.jpeg?format=750w");
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.banner div{
+    flex: 0 0 90%;
 }
 
 .banner h2 {
-    justify-content: flex-end;
+    background-color: tomato;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2rem;
+    line-height: 1;
+    display: inline;
 }
 
+.about-me{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+}
 
+.about-me h2{
+    padding: 30px;
+    border-style: solid;
+    border-color:#B1D4E0;
+    border-right-color: #2E8BC0; 
 
+}
+
+.about-me div{
+    padding: 25px;
+}
+
+.work-section{
+    display:flex;
+}
+
+.flex-container{
+    display: flex;
+}
 
 
 
