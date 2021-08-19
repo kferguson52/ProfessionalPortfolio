@@ -104,10 +104,19 @@ nav a:last-child{
 
 .work-section{
     display:flex;
+    flex-direction: column;
 }
 
 .flex-container{
     display: flex;
+}
+
+.top-work-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#take-row{
 }
 
 
